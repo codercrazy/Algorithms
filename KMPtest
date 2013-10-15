@@ -39,7 +39,7 @@ class KMP {
 													// pattern.
 	}
 
-	static int[] next(String sub) {
+	private static int[] next(String sub) {
 		int[] next = new int[sub.length()];
 		char[] c = sub.toCharArray();
 		int length = sub.length();
@@ -63,7 +63,7 @@ class KMP {
 		return next;
 	}
 
-	static int pattern(String str, String sub, int[] next) {
+	private static int pattern(String str, String sub, int[] next) {
 		char[] strchar = str.toCharArray();
 		char[] subchar = sub.toCharArray();
 		// for(int k=0;k<next.length;k++){
